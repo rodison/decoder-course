@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+#    url: jdbc:postgresql://eadauthuser.cau7apdyt9pp.us-east-2.rds.amazonaws.com:5432/eadauthuser
+#    username: postgres
+#    password: Pr1me1r0Banc0
+    url: jdbc:postgresql://172.18.58.79:5432/ead-course
+    username: ead-course
+    password: ead-course
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc:
+        lob.non-contextual-creation: true
+    properties:
+      hibernate:
+        show_sql: true
